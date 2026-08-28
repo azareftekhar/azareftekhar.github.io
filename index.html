@@ -1,3 +1,36 @@
+Today 10:28 AM
+Cover_ Azar Eftekhar Nik_ Aug 2026.docx
+Document
+CV_ Azar Eftekhar Nik_ Aug 2026.docx
+Document
+for github azar eftekhar use my cv and cover create content 
+
+also add photos: which one is better give me suggestions where to put two photos
+
+use this one
+
+
+
+Added the working color JPG as a professional portrait beside your introduction.
+
+For GitHub Pages, upload both files while keeping this structure:
+
+index.html
+assets/
+  azar-headshot.jpg
+
+
+
+now use this one so i compare 
+
+I cannot compare this one because it is again displaying as a fully black image. The first color headshot remains the only usable version so far.
+
+use that one and give me whole code and preview
+
+I used the working color JPG (assets/azar-headshot.jpg) in the hero area. The newer uploads still display black, so they are not included.
+
+I could not generate an in-chat image preview because browser rendering is unavailable here, but you can open the live local page file: .
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -5,13 +38,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Azar Eftekhar Nik, PhD — psychologist and cyberpsychology researcher studying human behavior in digital environments."
+      content="Azar Eftekhar, PhD — psychologist and cyberpsychology researcher studying human behavior in digital environments."
     />
-    <title>Azar Eftekhar Nik, PhD | Cyberpsychology Researcher</title>
+    <title>Azar Eftekhar, PhD | Cyberpsychology Researcher</title>
+    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
     <style>
       :root {
-        --ink: #102a6b;
-        --muted: #4c5f86;
+        --ink: #0a66c2;
+        --text: #172b4d;
+        --muted: #3f5273;
         --paper: #fbfdff;
         --soft: #eef2ff;
         --line: #cfdcff;
@@ -23,7 +58,7 @@
       html { scroll-behavior: smooth; }
       body {
         margin: 0;
-        color: var(--ink);
+        color: var(--text);
         background: var(--paper);
         font-family: Arial, Helvetica, sans-serif;
         line-height: 1.65;
@@ -39,8 +74,8 @@
         backdrop-filter: blur(10px);
       }
       nav { min-height: 72px; display: flex; justify-content: space-between; align-items: center; gap: 2rem; }
-      .brand { text-decoration: none; font-weight: 700; letter-spacing: -.02em; }
-      .brand span { color: var(--purple); }
+      .brand { color: var(--ink); text-decoration: none; font-size: .88rem; font-weight: 700; letter-spacing: -.02em; white-space: nowrap; }
+      .brand span { color: inherit; }
       .nav-links { display: flex; flex-wrap: wrap; gap: 1.25rem; font-size: .9rem; }
       .nav-links a { text-decoration: none; color: var(--muted); }
       .nav-links a:hover { color: var(--purple); }
@@ -48,11 +83,15 @@
         padding: clamp(4.5rem, 10vw, 8rem) 0 5rem;
         background: radial-gradient(circle at 82% 16%, #dbeafe 0, transparent 26rem), linear-gradient(135deg, #fbfdff 0%, #eff6ff 100%);
       }
+      .hero-layout { display: grid; grid-template-columns: minmax(0, 1fr) 280px; align-items: center; gap: clamp(2rem, 6vw, 5rem); }
+      .hero-photo { width: 100%; max-width: 280px; margin: 0; justify-self: end; }
+      .hero-photo img { display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: center; border-radius: 8px; box-shadow: 16px 16px 0 #dbeafe; }
       .eyebrow { margin: 0 0 1.25rem; color: var(--purple); font: 700 .76rem/1.2 Arial, Helvetica, sans-serif; letter-spacing: .11em; text-transform: uppercase; }
       h1, h2, h3 { font-family: Georgia, "Times New Roman", serif; line-height: 1.15; letter-spacing: -.035em; }
-      h1 { max-width: 850px; margin: 0; font-size: clamp(3rem, 7.5vw, 5.6rem); }
-      h1 em { color: var(--purple); font-style: normal; }
-      .hero-copy { max-width: 700px; margin: 1.75rem 0 0; font-size: clamp(1.1rem, 2.1vw, 1.35rem); color: #344f86; }
+      h1 { max-width: 850px; margin: 0; color: var(--ink); font-size: clamp(3rem, 7.5vw, 5.6rem); }
+      h1 em { color: inherit; font-style: normal; }
+      .hero-copy { max-width: 700px; margin: 1.75rem 0 0; font-size: clamp(1.1rem, 2.1vw, 1.35rem); color: #263c62; }
+      .name-note { margin: .65rem 0 0; color: var(--muted); font-size: .94rem; }
       .buttons { display: flex; flex-wrap: wrap; gap: .85rem; margin-top: 2rem; }
       .button { padding: .75rem 1.05rem; border: 1px solid var(--ink); border-radius: 4px; font-weight: 700; text-decoration: none; font-size: .92rem; }
       .button.primary { color: white; background: var(--ink); }
@@ -61,7 +100,7 @@
       section + section { border-top: 1px solid var(--line); }
       .label { color: var(--purple); font: 700 .75rem/1.2 Arial, Helvetica, sans-serif; text-transform: uppercase; letter-spacing: .1em; }
       h2 { margin: .7rem 0 1.4rem; font-size: clamp(2rem, 4.5vw, 3.3rem); }
-      .intro { max-width: 790px; font-size: 1.1rem; color: #344f86; }
+      .intro { max-width: 790px; font-size: 1.1rem; color: #263c62; }
       .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; margin-top: 2.5rem; }
       .card { padding: 1.5rem; background: white; border: 1px solid var(--line); border-radius: 7px; }
       .card h3 { margin: 0 0 .6rem; font-size: 1.32rem; }
@@ -81,10 +120,12 @@
       .course { padding: .5rem .8rem; border: 1px solid #bcd4ff; border-radius: 999px; font-size: .88rem; }
       .contact { text-align: center; }
       .contact .intro { margin: auto; }
+      .linkedin-badge { margin-top: 1.25rem; display: flex; justify-content: center; }
       footer { padding: 2rem 0; border-top: 1px solid var(--line); color: var(--muted); font-size: .85rem; }
       @media (max-width: 720px) {
         nav { padding: 1rem 0; align-items: flex-start; flex-direction: column; gap: .6rem; }
-        .grid, .research-list { grid-template-columns: 1fr; }
+        .grid, .research-list, .hero-layout { grid-template-columns: 1fr; }
+        .hero-photo { justify-self: start; max-width: 230px; margin-top: 1rem; }
         .wrap { width: min(var(--max), calc(100% - 2rem)); }
       }
     </style>
@@ -92,7 +133,7 @@
   <body>
     <header>
       <nav class="wrap" aria-label="Main navigation">
-        <a class="brand" href="#top">Azar Eftekhar Nik<span>, PhD</span></a>
+        <a class="brand" href="#top">Azar Eftekhar<span>, PhD in Psychology</span></a>
         <div class="nav-links">
           <a href="#about">About</a>
           <a href="#research">Research</a>
@@ -106,12 +147,20 @@
     <main id="top">
       <section class="hero">
         <div class="wrap">
-          <p class="eyebrow">Psychologist · Cyberpsychology Researcher · Educator</p>
-          <h1>Azar Eftekhar Nik, <em>PhD</em></h1>
-          <p class="hero-copy">I am a psychologist specializing in cyberpsychology. I study personality, online self-presentation, social-media behavior, and the ways people experience and respond to emerging technologies, including artificial intelligence.</p>
-          <div class="buttons">
-            <a class="button primary" href="#research">Explore my research</a>
-            <a class="button" href="#contact">Get in touch</a>
+          <div class="hero-layout">
+            <div>
+              <p class="eyebrow">Academic | Researcher | Mentor</p>
+              <h1>Azar Eftekhar, <em>PhD in Psychology</em></h1>
+              <p class="name-note">Azar Eftekhar Nik (publishing as Azar Eftekhar)</p>
+              <p class="hero-copy">I am a psychologist specializing in cyberpsychology. I study personality, online self-presentation, social-media behavior, and the ways people experience and respond to emerging technologies, including artificial intelligence.</p>
+              <div class="buttons">
+                <a class="button primary" href="#research">Explore my research</a>
+                <a class="button" href="#contact">Get in touch</a>
+              </div>
+            </div>
+            <figure class="hero-photo">
+              <img src="assets/azar-headshot.jpg" alt="Azar Eftekhar, PhD in Psychology" />
+            </figure>
           </div>
         </div>
       </section>
@@ -120,7 +169,7 @@
         <div class="wrap">
           <p class="label">About</p>
           <h2>About my work</h2>
-          <p class="intro">I hold a PhD in Cyberpsychology and Social Psychology from the University of Wolverhampton and completed the Summer Doctoral Programme at the Oxford Internet Institute. My doctoral research examined personality as a predictor of visual self-presentation and motivations for photo-sharing on social media.</p>
+          <p class="intro">My full name is Azar Eftekhar Nik, and I publish academically as Azar Eftekhar. I hold a PhD in Cyberpsychology and Social Psychology from the University of Wolverhampton and completed the Summer Doctoral Programme at the Oxford Internet Institute. My doctoral research examined personality as a predictor of visual self-presentation and motivations for photo-sharing on social media.</p>
           <p class="intro">I have taught psychology and cyberpsychology in the United States and the United Kingdom, and I have also worked in industry as a UX researcher and training manager. These experiences inform my interest in the psychological, social, and ethical questions raised by everyday technology.</p>
           <div class="grid">
             <article class="card">
@@ -200,16 +249,24 @@
           <p class="intro">For academic inquiries, research collaboration, or speaking opportunities, please feel free to contact me by email.</p>
           <div class="buttons" style="justify-content:center">
             <a class="button primary" href="mailto:cyberpsychologylab@gmail.com">Email me</a>
-            <!-- Replace # with your public profile URLs before publishing. -->
-            <a class="button" href="#">Google Scholar</a>
-            <a class="button" href="#">LinkedIn</a>
+            <a class="button" href="https://www.nsu.edu/psychology/ms-cyberpsychology/contact-us" target="_blank" rel="noopener noreferrer">Norfolk State University</a>
+            <!-- Add your exact public URLs before publishing. -->
+            <a class="button" href="https://scholar.google.com/citations?user=QHQ8MSoAAAAJ&amp;hl=en&amp;oi=ao" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+            <a class="button" href="https://orcid.org/0009-0000-0901-4191" target="_blank" rel="noopener noreferrer">ORCID</a>
+          </div>
+          <div class="linkedin-badge">
+            <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="azar-eftekhar-phd-in-psychology" data-version="v1">
+              <a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/azar-eftekhar-phd-in-psychology?trk=profile-badge">Azar Eftekhar, Ph.D. in Psychology</a>
+            </div>
           </div>
         </div>
       </section>
     </main>
 
     <footer>
-      <div class="wrap">© 2026 Azar Eftekhar Nik, PhD · Cyberpsychology Researcher</div>
+      <div class="wrap">© 2026 Azar Eftekhar, PhD · Cyberpsychology Researcher</div>
     </footer>
   </body>
 </html>
+
+
