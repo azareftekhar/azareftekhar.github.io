@@ -76,9 +76,10 @@
         --text: #262622;
         --muted: #6b6459;
         --paper: #faf7f2;
-        --soft: #f0ece2;
+        --soft: #ede9fe;
         --line: #ddd5c4;
-        --accent: #7a3b2e;
+        --accent: #6d28d9;
+        --accent-hover: #7c3aed;
         --max: 880px;
       }
       * { box-sizing: border-box; }
@@ -92,7 +93,7 @@
         line-height: 1.7;
       }
       a { color: var(--accent); text-underline-offset: 3px; }
-      a:hover { color: var(--ink); }
+      a:hover { color: var(--accent-hover); }
       .wrap { width: min(var(--max), calc(100% - 3rem)); margin: auto; }
       header {
         border-bottom: 1px solid var(--line);
@@ -106,7 +107,7 @@
       .brand span { color: var(--muted); font-weight: 400; }
       .nav-links { display: flex; flex-wrap: wrap; gap: 1.1rem; font-size: .85rem; font-family: Arial, Helvetica, sans-serif; }
       .nav-links a { text-decoration: none; color: var(--muted); }
-      .nav-links a:hover { color: var(--accent); }
+      .nav-links a:hover { color: var(--accent-hover); }
       .hero {
         padding: 3rem 0 2.75rem;
         background: var(--soft);
@@ -127,6 +128,7 @@
       .button:hover { background: var(--ink); color: var(--paper); }
       section { padding: 2.5rem 0; }
       section + section { border-top: 1px solid var(--line); }
+      #about { background: #f5f3ff; }
       .label { color: var(--accent); font: 700 .72rem/1.2 Arial, Helvetica, sans-serif; text-transform: uppercase; letter-spacing: .08em; }
       h2 { margin: .4rem 0 1rem; font-size: 1.4rem; color: var(--ink); }
       .intro { max-width: 680px; font-size: .98rem; color: var(--text); }
@@ -139,9 +141,17 @@
       .pubs { display: grid; gap: .5rem; margin-top: 1.5rem; }
       .pub { padding: .95rem 0; border-bottom: 1px solid var(--line); }
       .pub-title { margin: 0; font-weight: 700; font-size: .96rem; }
-      .pub-title a { color: var(--ink); text-decoration: none; }
-      .pub-title a:hover { color: var(--accent); text-decoration: underline; }
+      .pub-title a { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; }
+      .pub-title a:hover { color: var(--accent-hover); text-decoration: underline; }
       .pub-meta { margin: .3rem 0 0; color: var(--muted); font-size: .85rem; font-style: italic; }
+      .mentorship-role { margin: 0; color: var(--text); font-weight: 700; }
+      .mentorship-list { max-width: 760px; margin: 1.35rem 0 0; padding-left: 1.25rem; }
+      .mentorship-list li { padding: 0 0 .7rem; font-size: .93rem; line-height: 1.55; }
+      .highlights-list { max-width: 760px; margin: 1.35rem 0 0; padding-left: 1.25rem; }
+      .highlights-list li { padding: 0 0 .7rem; font-size: .93rem; line-height: 1.55; }
+      .certificate-list { margin: 1.35rem 0 0; padding-left: 1.25rem; columns: 2; column-gap: 2rem; }
+      .certificate-list li { break-inside: avoid; padding: 0 0 .8rem; font-size: .88rem; line-height: 1.5; }
+      .certificate-list strong { color: var(--ink); }
       .courses { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: 1.5rem; }
       .course { padding: .35rem .65rem; border: 1px solid var(--line); font-size: .78rem; font-family: Arial, Helvetica, sans-serif; color: var(--text); background: var(--soft); }
       .contact { text-align: center; }
@@ -150,6 +160,7 @@
         nav { padding: .75rem 0; align-items: flex-start; flex-direction: column; gap: .5rem; }
         .grid { grid-template-columns: 1fr; }
         .research-list { columns: 1; }
+        .certificate-list { columns: 1; }
         .hero-layout { grid-template-columns: 100px minmax(0, 1fr); }
         .wrap { width: min(var(--max), calc(100% - 2rem)); }
       }
@@ -164,32 +175,16 @@
           <a href="#research">Research</a>
           <a href="#publications">Publications</a>
           <a href="#teaching">Teaching</a>
+          <a href="#mentorship">Mentorship</a>
           <a href="#contact">Contact</a>
         </div>
       </nav>
     </header>
 
     <main id="top">
-      <section class="hero">
-        <div class="wrap">
-          <div class="hero-layout">
-            <div>
-              <p class="eyebrow">Academic | Researcher | Mentor</p>
-              <h1>Azar Eftekhar, <em>PhD in Psychology</em></h1>
-              <p class="name-note">Azar Eftekhar Nik (publishing as Azar Eftekhar)</p>
-              <p class="hero-copy">I am a psychologist specializing in cyberpsychology. I study personality, online self-presentation, social-media behavior, and the ways people experience and respond to emerging technologies, including artificial intelligence.</p>
-            </div>
-            <figure class="hero-photo">
-              <img src="Azar_Portrait_2024.jpg" alt="Azar Eftekhar, PhD" />
-            </figure>
-          </div>
-        </div>
-      </section>
-
       <section id="about">
         <div class="wrap">
-          <p class="label">About</p>
-          <h2>About my work</h2>
+          <h2>About me</h2>
           <p class="intro">My full name is Azar Eftekhar Nik, and I publish academically as Azar Eftekhar. I hold a PhD in Cyberpsychology and Social Psychology from the University of Wolverhampton and completed the Summer Doctoral Programme at the Oxford Internet Institute. My doctoral research examined personality as a predictor of visual self-presentation and motivations for photo-sharing on social media.</p>
           <p class="intro">I have taught psychology and cyberpsychology in the United States and the United Kingdom, and I have also worked in industry as a UX researcher and training manager. These experiences inform my interest in the psychological, social, and ethical questions raised by everyday technology.</p>
           <div class="grid">
@@ -227,7 +222,6 @@
 
       <section id="publications">
         <div class="wrap">
-          <p class="label">Selected publications</p>
           <h2>Selected publications</h2>
           <div class="pubs">
             <article class="pub">
@@ -248,9 +242,8 @@
 
       <section id="teaching" class="teaching">
         <div class="wrap">
-          <p class="label">Teaching &amp; mentorship</p>
-          <h2>Teaching and graduate mentorship</h2>
-          <p class="intro">I teach courses that introduce students to cyberpsychology and connect psychological concepts to digital behavior, technology, and research practice. In capstone supervision, I work with students as they design, conduct, and communicate their own research.</p>
+          <h2>Teaching</h2>
+          <p class="intro">I teach courses that introduce students to cyberpsychology and connect psychological concepts to digital behavior, technology, and research practice.</p>
           <div class="courses" aria-label="Selected courses">
             <span class="course">Cyberpsychology</span>
             <span class="course">Research &amp; Ethics in Cyberpsychology</span>
@@ -263,15 +256,85 @@
         </div>
       </section>
 
+      <section id="teaching-excellence">
+        <div class="wrap">
+          <p class="label">Teaching excellence</p>
+          <h2>Highlights of Teaching Excellence and Student Satisfaction</h2>
+          <ul class="highlights-list">
+            <li>Achieved an average Global Index score of 4.5+/5 across all courses taught at USC from Fall 2022 to Spring 2026, highlighting consistent excellence in communication, engagement, and instructional clarity.</li>
+            <li>Sustained an Instructor Overall rating of 4.5+/5 for all courses taught at USC from Fall 2022 to Spring 2026, demonstrating effective teaching methods and strong student connections.</li>
+            <li>Maintained high student satisfaction even in large classes, earning an Instructor Overall rating of 4.5+/5, reflecting consistent teaching quality across varying class sizes.</li>
+            <li>Consistently received excellent and outstanding peer evaluations, affirming the effectiveness of instructional methods and a commitment to fostering a rich and rewarding educational environment.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="mentorship">
+        <div class="wrap">
+          <p class="label">Mentorship</p>
+          <h2>Graduate mentorship (Selected projects)</h2>
+          <p class="intro">In capstone supervision, I work with students as they design, conduct, and communicate their own research.</p>
+          <p class="mentorship-role">Committee Chair and Mentor for Master's Students, Cyberpsychology Program, Norfolk State University | 2022–Present</p>
+          <ol class="mentorship-list">
+            <li>Psychological, Ethical, and Societal Implications of Algorithmic Design: How AI Shapes Privacy, Power, and Public Discourse (2026)</li>
+            <li>Empathetic AI Without Emotion: How Anthropomorphism and Social Presence Shape Trust in Human–AI Interaction (HAX) (2025)</li>
+            <li>Ethical Challenges in AI Hiring: The Need for Social Scientists and Information Specialists in Interdisciplinary Collaboration (2025)</li>
+            <li>Coping with Technostress in Online Learning: The Role of Community Support and Digital Literacy (2025)</li>
+            <li>The Psychological Impact of Cybercrime: A Thematic Analysis Study of the Victims (2025)</li>
+            <li>Empowering Women in Technology: Strategies for Achieving Digital Inclusion (2025)</li>
+            <li>AI-Driven Analysis: Scraping TikTok Comments and Hashtags on ADHD Self-Diagnosis (2024)</li>
+            <li>Attachment Styles in the Digital Age: Understanding Virtual Relationships (2024)</li>
+            <li>Urgent Online Time: ADHD Positive and Negative Coping Mechanisms (2024)</li>
+            <li>From Pixels to PTSD, Battling Beyond the Screen: A Relational Content Analysis on Trauma of Photo Sharing and Sextortion Among Military Members (2023)</li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="awards">
+        <div class="wrap">
+          <h2>Awards and Recognition</h2>
+          <ul class="highlights-list">
+            <li>Career Influencer, USC Career Center, Fall 2025 and Spring 2026</li>
+            <li>Thank-a-Teacher, Center for Teaching Excellence, USC, Fall 2023, Spring and Fall 2024, Spring 2025</li>
+            <li>PhD Fully Funded Scholarship, University of Wolverhampton, UK, 2012–2017</li>
+            <li>Travel Award, European Association of Personality Psychology, University of Lausanne, Switzerland, 2014</li>
+            <li>Travel Award, De Montfort University, presentation at Cyberpsychology Conference, Leicester, UK, 2013</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="certificates">
+        <div class="wrap">
+          <h2>Certificates</h2>
+          <ul class="certificate-list">
+            <li><strong>Active Learning with Generative AI-Powered Activities</strong> (2025), Center for Teaching Excellence, University of South Carolina</li>
+            <li><strong>Navigating New Norms: Harnessing Generative AI for Library Services and Solutions</strong> (2024), National Library of Medicine</li>
+            <li><strong>Artificial Intelligence Fundamentals</strong> (2024), IBM. Courses included AI, natural language processing and computer vision, machine learning and deep learning, IBM Watson Studio, AI ethics, and the AI job landscape.</li>
+            <li><strong>Certified Online Faculty</strong> (2022–Present), Online Faculty Certification Program, Norfolk State University</li>
+            <li><strong>Mental Health and Well-being Competency for Faculty</strong> (2020), Center for Teaching Excellence, University of South Carolina</li>
+            <li><strong>Teaching Towards Inclusive Excellence (TTIE)</strong> (2019), Center for Teaching Excellence, University of South Carolina</li>
+            <li><strong>Fostering Proactive Learning Environments (FPLE)</strong> (2019), Center for Teaching Excellence, University of South Carolina</li>
+            <li><strong>Using NVivo in Qualitative Research</strong> (2014), University of Wolverhampton</li>
+            <li><strong>Certified Instructor: ScienceDirect and Scopus training</strong> (2011), Elsevier</li>
+            <li><strong>Certified Instructor: IEEE online databases training</strong> (2010), IEEE</li>
+            <li><strong>Certified Instructor: ISI Web of Science and EndNote Web training</strong> (2010), Thomson Reuters</li>
+            <li><strong>Carolina Online Learning &amp; Teaching (COLT)</strong> (in progress), Center for Teaching Excellence, University of South Carolina</li>
+            <li><strong>Technology for Online Teaching and Learning (TOTL)</strong> (in progress), Center for Teaching Excellence, University of South Carolina</li>
+            <li><strong>Integrative and Experiential Learning (IEL)</strong> (in progress), Center for Teaching Excellence, University of South Carolina</li>
+            <li><strong>Global Learning Experience (GLE)</strong> (in progress), Center for Teaching Excellence, University of South Carolina</li>
+          </ul>
+        </div>
+      </section>
+
       <section id="contact" class="contact">
         <div class="wrap">
-          <p class="label">Connect</p>
           <h2>Contact</h2>
           <p class="intro">For academic inquiries, research collaboration, or speaking opportunities, please feel free to contact me by email.</p>
           <div class="buttons" style="justify-content:center">
             <a class="button primary" href="mailto:cyberpsychologylab@gmail.com">Email me</a>
             <a class="button" href="https://www.nsu.edu/psychology/ms-cyberpsychology/contact-us" target="_blank" rel="noopener noreferrer">Norfolk State University</a>
             <a class="button" href="https://scholar.google.com/citations?user=QHQ8MSoAAAAJ&amp;hl=en&amp;oi=ao" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+            <a class="button" href="https://www.linkedin.com/in/azar-eftekhar-phd-in-psychology" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             <a class="button" href="https://orcid.org/0009-0000-0901-4191" target="_blank" rel="noopener noreferrer">ORCID</a>
           </div>
         </div>
