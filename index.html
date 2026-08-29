@@ -5,21 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Azar Eftekhar, PhD — psychologist and cyberpsychology researcher studying human behavior in digital environments."
+      content="Azar Eftekhar, PhD — psychologist and cyberpsychology researcher studying online identity, personality, social media behavior, and human responses to AI."
     />
+    <meta name="robots" content="index, follow" />
+    <meta name="google-site-verification" content="7iFNKrNU4f2u0ZScpaDH6ABWvz2hdxk-zyspOPpx-NI" />
+    <meta name="author" content="Azar Eftekhar" />
+    <meta name="keywords" content="Azar Eftekhar, cyberpsychology, psychology researcher, online identity, self-presentation, social media behavior, AI trust, generative AI in education, digital wellbeing, Norfolk State University" />
+    <link rel="canonical" href="https://azareftekhar.github.io/" />
+
     <title>Azar Eftekhar, PhD | Cyberpsychology Researcher</title>
-    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content="Azar Eftekhar, PhD | Cyberpsychology Researcher" />
+    <meta property="og:description" content="Psychologist and cyberpsychology researcher studying online identity, personality, social media behavior, and human responses to AI." />
+    <meta property="og:url" content="https://azareftekhar.github.io/" />
+    <meta property="og:image" content="https://azareftekhar.github.io/Azar_Portrait_2024.jpg" />
+    <meta property="og:site_name" content="Azar Eftekhar, PhD" />
+    <meta property="profile:first_name" content="Azar" />
+    <meta property="profile:last_name" content="Eftekhar" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Azar Eftekhar, PhD | Cyberpsychology Researcher" />
+    <meta name="twitter:description" content="Psychologist and cyberpsychology researcher studying online identity, personality, social media behavior, and human responses to AI." />
+    <meta name="twitter:image" content="https://azareftekhar.github.io/Azar_Portrait_2024.jpg" />
+
+    <!-- Structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Azar Eftekhar",
+      "alternateName": "Azar Eftekhar Nik",
+      "honorificSuffix": "PhD",
+      "jobTitle": "Cyberpsychology Researcher",
+      "url": "https://azareftekhar.github.io/",
+      "image": "https://azareftekhar.github.io/Azar_Portrait_2024.jpg",
+      "email": "mailto:cyberpsychologylab@gmail.com",
+      "affiliation": {
+        "@type": "CollegeOrUniversity",
+        "name": "Norfolk State University"
+      },
+      "alumniOf": [
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "University of Wolverhampton"
+        }
+      ],
+      "sameAs": [
+        "https://scholar.google.com/citations?user=QHQ8MSoAAAAJ&hl=en&oi=ao",
+        "https://orcid.org/0009-0000-0901-4191",
+        "https://www.linkedin.com/in/azar-eftekhar-phd-in-psychology"
+      ],
+      "knowsAbout": [
+        "Cyberpsychology",
+        "Online identity and self-presentation",
+        "Social media behavior",
+        "Trust and anthropomorphism in AI",
+        "Algorithmic bias and privacy",
+        "Generative AI in education",
+        "Digital wellbeing"
+      ]
+    }
+    </script>
+
     <style>
       :root {
-        --ink: #0a66c2;
-        --text: #172b4d;
-        --muted: #3f5273;
-        --paper: #fbfdff;
-        --soft: #eef2ff;
-        --line: #cfdcff;
-        --purple: #7c3aed;
-        --blue: #1463e8;
-        --max: 1120px;
+        --ink: #1c2333;
+        --text: #262622;
+        --muted: #6b6459;
+        --paper: #faf7f2;
+        --soft: #f0ece2;
+        --line: #ddd5c4;
+        --accent: #7a3b2e;
+        --max: 880px;
       }
       * { box-sizing: border-box; }
       html { scroll-behavior: smooth; }
@@ -27,72 +87,70 @@
         margin: 0;
         color: var(--text);
         background: var(--paper);
-        font-family: Arial, Helvetica, sans-serif;
-        line-height: 1.65;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-size: 16px;
+        line-height: 1.7;
       }
-      a { color: inherit; text-underline-offset: 4px; }
+      a { color: var(--accent); text-underline-offset: 3px; }
+      a:hover { color: var(--ink); }
       .wrap { width: min(var(--max), calc(100% - 3rem)); margin: auto; }
       header {
         border-bottom: 1px solid var(--line);
-        background: rgba(251, 252, 255, .94);
+        background: var(--paper);
         position: sticky;
         top: 0;
         z-index: 5;
-        backdrop-filter: blur(10px);
       }
-      nav { min-height: 72px; display: flex; justify-content: space-between; align-items: center; gap: 2rem; }
-      .brand { color: var(--ink); text-decoration: none; font-size: .88rem; font-weight: 700; letter-spacing: -.02em; white-space: nowrap; }
-      .brand span { color: inherit; }
-      .nav-links { display: flex; flex-wrap: wrap; gap: 1.25rem; font-size: .9rem; }
+      nav { min-height: 58px; display: flex; justify-content: space-between; align-items: center; gap: 2rem; flex-wrap: wrap; padding: .5rem 0; }
+      .brand { color: var(--ink); text-decoration: none; font-size: .95rem; font-weight: 700; letter-spacing: .01em; white-space: nowrap; }
+      .brand span { color: var(--muted); font-weight: 400; }
+      .nav-links { display: flex; flex-wrap: wrap; gap: 1.1rem; font-size: .85rem; font-family: Arial, Helvetica, sans-serif; }
       .nav-links a { text-decoration: none; color: var(--muted); }
-      .nav-links a:hover { color: var(--purple); }
+      .nav-links a:hover { color: var(--accent); }
       .hero {
-        padding: clamp(4.5rem, 10vw, 8rem) 0 5rem;
-        background: radial-gradient(circle at 82% 16%, #dbeafe 0, transparent 26rem), linear-gradient(135deg, #fbfdff 0%, #eff6ff 100%);
+        padding: 3rem 0 2.75rem;
+        background: var(--soft);
+        border-bottom: 1px solid var(--line);
       }
-      .hero-layout { display: grid; grid-template-columns: minmax(0, 1fr) 280px; align-items: center; gap: clamp(2rem, 6vw, 5rem); }
-      .hero-photo { width: 100%; max-width: 280px; margin: 0; justify-self: end; }
-      .hero-photo img { display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: center; border-radius: 8px; box-shadow: 16px 16px 0 #dbeafe; }
-      .eyebrow { margin: 0 0 1.25rem; color: var(--purple); font: 700 .76rem/1.2 Arial, Helvetica, sans-serif; letter-spacing: .11em; text-transform: uppercase; }
-      h1, h2, h3 { font-family: Georgia, "Times New Roman", serif; line-height: 1.15; letter-spacing: -.035em; }
-      h1 { max-width: 850px; margin: 0; color: var(--ink); font-size: clamp(3rem, 7.5vw, 5.6rem); }
-      h1 em { color: inherit; font-style: normal; }
-      .hero-copy { max-width: 700px; margin: 1.75rem 0 0; font-size: clamp(1.1rem, 2.1vw, 1.35rem); color: #263c62; }
-      .name-note { margin: .65rem 0 0; color: var(--muted); font-size: .94rem; }
-      .buttons { display: flex; flex-wrap: wrap; gap: .85rem; margin-top: 2rem; }
-      .button { padding: .75rem 1.05rem; border: 1px solid var(--ink); border-radius: 4px; font-weight: 700; text-decoration: none; font-size: .92rem; }
-      .button.primary { color: white; background: var(--ink); }
-      .button:hover { transform: translateY(-1px); }
-      section { padding: clamp(4rem, 8vw, 6.5rem) 0; }
+      .hero-layout { display: grid; grid-template-columns: 150px minmax(0, 1fr); align-items: start; gap: 2rem; }
+      .hero-photo { width: 100%; max-width: 150px; margin: 0; }
+      .hero-photo img { display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: center; border: 1px solid var(--line); }
+      .eyebrow { margin: 0 0 .5rem; color: var(--accent); font: 700 .72rem/1.2 Arial, Helvetica, sans-serif; letter-spacing: .08em; text-transform: uppercase; }
+      h1, h2, h3 { font-family: Georgia, "Times New Roman", Times, serif; line-height: 1.25; font-weight: 700; }
+      h1 { max-width: 640px; margin: 0; color: var(--ink); font-size: 1.85rem; }
+      h1 em { color: inherit; font-style: italic; font-weight: 400; }
+      .hero-copy { max-width: 620px; margin: .9rem 0 0; font-size: 1rem; color: var(--text); }
+      .name-note { margin: .4rem 0 0; color: var(--muted); font-size: .85rem; font-style: italic; }
+      .buttons { display: flex; flex-wrap: wrap; gap: .6rem; margin-top: 1.25rem; }
+      .button { padding: .45rem .8rem; border: 1px solid var(--ink); border-radius: 2px; font-weight: 700; text-decoration: none; font-size: .78rem; font-family: Arial, Helvetica, sans-serif; letter-spacing: .01em; color: var(--ink); }
+      .button.primary { color: var(--paper); background: var(--ink); border-color: var(--ink); }
+      .button:hover { background: var(--ink); color: var(--paper); }
+      section { padding: 2.5rem 0; }
       section + section { border-top: 1px solid var(--line); }
-      .label { color: var(--purple); font: 700 .75rem/1.2 Arial, Helvetica, sans-serif; text-transform: uppercase; letter-spacing: .1em; }
-      h2 { margin: .7rem 0 1.4rem; font-size: clamp(2rem, 4.5vw, 3.3rem); }
-      .intro { max-width: 790px; font-size: 1.1rem; color: #263c62; }
-      .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; margin-top: 2.5rem; }
-      .card { padding: 1.5rem; background: white; border: 1px solid var(--line); border-radius: 7px; }
-      .card h3 { margin: 0 0 .6rem; font-size: 1.32rem; }
-      .card p { margin: 0; color: var(--muted); font-size: .96rem; }
-      .research-list { list-style: none; padding: 0; margin: 2rem 0 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: .7rem 2rem; }
-      .research-list li { padding: .8rem 0; border-bottom: 1px solid var(--line); font-weight: 600; }
-      .research-list li::before { content: "↗"; color: var(--purple); margin-right: .75rem; }
-      .pubs { display: grid; gap: 1rem; margin-top: 2rem; }
-      .pub { padding: 1.25rem 0; border-bottom: 1px solid var(--line); }
-      .pub-title { margin: 0; font-weight: 700; }
-      .pub-meta { margin: .35rem 0 0; color: var(--muted); font-size: .93rem; }
-      .teaching { background: linear-gradient(135deg, #103a9a, #5f25c7); color: white; }
-      .teaching h2 { color: white; }
-      .teaching .label { color: #c4b5fd; }
-      .teaching .intro { color: #dce5ff; }
-      .courses { display: flex; flex-wrap: wrap; gap: .65rem; margin-top: 2rem; }
-      .course { padding: .5rem .8rem; border: 1px solid #bcd4ff; border-radius: 999px; font-size: .88rem; }
+      .label { color: var(--accent); font: 700 .72rem/1.2 Arial, Helvetica, sans-serif; text-transform: uppercase; letter-spacing: .08em; }
+      h2 { margin: .4rem 0 1rem; font-size: 1.4rem; color: var(--ink); }
+      .intro { max-width: 680px; font-size: .98rem; color: var(--text); }
+      .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 1.75rem; }
+      .card { padding: 1.1rem 1.2rem; background: var(--paper); border: 1px solid var(--line); border-left: 3px solid var(--accent); }
+      .card h3 { margin: 0 0 .4rem; font-size: 1.02rem; }
+      .card p { margin: 0; color: var(--muted); font-size: .88rem; line-height: 1.55; }
+      .research-list { list-style: disc; padding: 0 0 0 1.25rem; margin: 1.5rem 0 0; columns: 2; column-gap: 2.5rem; }
+      .research-list li { padding: 0 0 .85rem; font-size: .95rem; line-height: 1.6; break-inside: avoid; }
+      .pubs { display: grid; gap: .5rem; margin-top: 1.5rem; }
+      .pub { padding: .95rem 0; border-bottom: 1px solid var(--line); }
+      .pub-title { margin: 0; font-weight: 700; font-size: .96rem; }
+      .pub-title a { color: var(--ink); text-decoration: none; }
+      .pub-title a:hover { color: var(--accent); text-decoration: underline; }
+      .pub-meta { margin: .3rem 0 0; color: var(--muted); font-size: .85rem; font-style: italic; }
+      .courses { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: 1.5rem; }
+      .course { padding: .35rem .65rem; border: 1px solid var(--line); font-size: .78rem; font-family: Arial, Helvetica, sans-serif; color: var(--text); background: var(--soft); }
       .contact { text-align: center; }
       .contact .intro { margin: auto; }
-      .linkedin-badge { margin-top: 1.25rem; display: flex; justify-content: center; }
-      footer { padding: 2rem 0; border-top: 1px solid var(--line); color: var(--muted); font-size: .85rem; }
       @media (max-width: 720px) {
-        nav { padding: 1rem 0; align-items: flex-start; flex-direction: column; gap: .6rem; }
-        .grid, .research-list, .hero-layout { grid-template-columns: 1fr; }
-        .hero-photo { justify-self: start; max-width: 230px; margin-top: 1rem; }
+        nav { padding: .75rem 0; align-items: flex-start; flex-direction: column; gap: .5rem; }
+        .grid { grid-template-columns: 1fr; }
+        .research-list { columns: 1; }
+        .hero-layout { grid-template-columns: 100px minmax(0, 1fr); }
         .wrap { width: min(var(--max), calc(100% - 2rem)); }
       }
     </style>
@@ -100,7 +158,7 @@
   <body>
     <header>
       <nav class="wrap" aria-label="Main navigation">
-        <a class="brand" href="#top">Azar Eftekhar<span>, PhD in Psychology</span></a>
+        <a class="brand" href="#top">Azar Eftekhar<span>, PhD</span></a>
         <div class="nav-links">
           <a href="#about">About</a>
           <a href="#research">Research</a>
@@ -120,13 +178,9 @@
               <h1>Azar Eftekhar, <em>PhD in Psychology</em></h1>
               <p class="name-note">Azar Eftekhar Nik (publishing as Azar Eftekhar)</p>
               <p class="hero-copy">I am a psychologist specializing in cyberpsychology. I study personality, online self-presentation, social-media behavior, and the ways people experience and respond to emerging technologies, including artificial intelligence.</p>
-              <div class="buttons">
-                <a class="button primary" href="#research">Explore my research</a>
-                <a class="button" href="#contact">Get in touch</a>
-              </div>
             </div>
             <figure class="hero-photo">
-              <img src="assets/azar-headshot.jpg" alt="Azar Eftekhar, PhD in Psychology" />
+              <img src="Azar_Portrait_2024.jpg" alt="Azar Eftekhar, PhD" />
             </figure>
           </div>
         </div>
@@ -177,15 +231,15 @@
           <h2>Selected publications</h2>
           <div class="pubs">
             <article class="pub">
-              <p class="pub-title">Self-presentation and identity online</p>
+              <p class="pub-title"><a href="https://doi.org/10.1007/978-3-031-52643-5_46-1" target="_blank" rel="noopener noreferrer">Self-presentation and identity online</a></p>
               <p class="pub-meta">Eftekhar, A. (2026). <em>The Palgrave Encyclopedia of Cyberpsychology</em>. Palgrave Macmillan.</p>
             </article>
             <article class="pub">
-              <p class="pub-title">Is generative AI reshaping academic practices worldwide? A survey of adoption, benefits, and concerns</p>
+              <p class="pub-title"><a href="https://doi.org/10.1016/j.ipm.2025.104350" target="_blank" rel="noopener noreferrer">Is generative AI reshaping academic practices worldwide? A survey of adoption, benefits, and concerns</a></p>
               <p class="pub-meta">Mohammadi, E., Thelwall, M., Cai, Y., Collier, T., Tahamtan, I., &amp; Eftekhar, A. (2026). <em>Information Processing &amp; Management, 63</em>.</p>
             </article>
             <article class="pub">
-              <p class="pub-title">Capturing personality from Facebook photos and photo-related activities: How much exposure do you need?</p>
+              <p class="pub-title"><a href="https://doi.org/10.1016/j.chb.2014.04.048" target="_blank" rel="noopener noreferrer">Capturing personality from Facebook photos and photo-related activities: How much exposure do you need?</a></p>
               <p class="pub-meta">Eftekhar, A., Fullwood, C., &amp; Morris, N. (2014). <em>Computers in Human Behavior, 37</em>, 162–170.</p>
             </article>
           </div>
@@ -217,21 +271,11 @@
           <div class="buttons" style="justify-content:center">
             <a class="button primary" href="mailto:cyberpsychologylab@gmail.com">Email me</a>
             <a class="button" href="https://www.nsu.edu/psychology/ms-cyberpsychology/contact-us" target="_blank" rel="noopener noreferrer">Norfolk State University</a>
-            <!-- Add your exact public URLs before publishing. -->
             <a class="button" href="https://scholar.google.com/citations?user=QHQ8MSoAAAAJ&amp;hl=en&amp;oi=ao" target="_blank" rel="noopener noreferrer">Google Scholar</a>
             <a class="button" href="https://orcid.org/0009-0000-0901-4191" target="_blank" rel="noopener noreferrer">ORCID</a>
-          </div>
-          <div class="linkedin-badge">
-            <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="azar-eftekhar-phd-in-psychology" data-version="v1">
-              <a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/azar-eftekhar-phd-in-psychology?trk=profile-badge">Azar Eftekhar, Ph.D. in Psychology</a>
-            </div>
           </div>
         </div>
       </section>
     </main>
-
-    <footer>
-      <div class="wrap">© 2026 Azar Eftekhar, PhD · Cyberpsychology Researcher</div>
-    </footer>
   </body>
 </html>
