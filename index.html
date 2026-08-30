@@ -120,9 +120,7 @@
         top: 0;
         z-index: 5;
       }
-      nav { min-height: 58px; display: flex; justify-content: space-between; align-items: center; gap: 2rem; flex-wrap: wrap; padding: .5rem 0; }
-      .brand { color: var(--ink); text-decoration: none; font-size: .95rem; font-weight: 700; letter-spacing: .01em; white-space: nowrap; }
-      .brand span { color: var(--muted); font-weight: 400; }
+      nav { min-height: 50px; display: flex; justify-content: flex-end; align-items: center; gap: 2rem; flex-wrap: wrap; padding: .5rem 0; }
       .nav-links { display: flex; flex-wrap: wrap; gap: 1.1rem; font-size: .85rem; font-family: Arial, Helvetica, sans-serif; }
       .nav-links a { text-decoration: none; color: var(--muted); }
       .nav-links a:hover { color: var(--accent-hover); }
@@ -137,7 +135,7 @@
       .eyebrow { margin: 0 0 .5rem; color: var(--accent); font: 700 .72rem/1.2 Arial, Helvetica, sans-serif; letter-spacing: .08em; text-transform: uppercase; }
       h1, h2, h3 { font-family: Georgia, "Times New Roman", Times, serif; line-height: 1.25; font-weight: 700; }
       h1 { max-width: 640px; margin: 0; color: var(--ink); font-size: 1.85rem; }
-      .hero h1 { font-size: 2.7rem; }
+      .hero h1 { font-size: 2.2rem; }
       h1 em { color: inherit; font-style: italic; font-weight: 400; }
       .hero-copy { max-width: 620px; margin: .9rem 0 0; font-size: 1rem; color: var(--text); }
       .name-note { margin: .4rem 0 0; color: var(--muted); font-size: .85rem; font-style: italic; }
@@ -159,7 +157,7 @@
       .research-list li { padding: 0 0 .85rem; font-size: .95rem; line-height: 1.6; break-inside: avoid; }
       .research-gallery { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; max-width: 760px; margin: 1.75rem 0 0; }
       .research-gallery figure { margin: 0; }
-      .research-gallery img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border: 1px solid var(--line); }
+      .research-gallery img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: contain; background: var(--paper); border: 1px solid var(--line); }
       .research-gallery figcaption { margin-top: .5rem; color: var(--muted); font-size: .82rem; line-height: 1.4; }
       .pubs { display: grid; gap: .5rem; margin-top: 1.5rem; }
       .pub { padding: .95rem 0; border-bottom: 1px solid var(--line); }
@@ -186,7 +184,7 @@
         .research-gallery { grid-template-columns: 1fr; }
         .certificate-list { columns: 1; }
         .hero-layout { grid-template-columns: 100px minmax(0, 1fr); }
-        .hero h1 { font-size: 2rem; }
+        .hero h1 { font-size: 1.8rem; }
         .wrap { width: min(var(--max), calc(100% - 2rem)); }
       }
     </style>
@@ -194,7 +192,6 @@
   <body>
     <header>
       <nav class="wrap" aria-label="Main navigation">
-        <a class="brand" href="#top">Azar Eftekhar<span>, PhD</span></a>
         <div class="nav-links">
           <a href="#about">About</a>
           <a href="#research">Research</a>
@@ -227,12 +224,12 @@
           <p class="intro">I have designed and taught a wide range of courses in person and online, including Research Methods, Survey of Personality, Introductory Psychology, Cyberpsychology, Cyber Cognition, Consumer and Media Cyberpsychology, and Data Visualization. In my teaching and research, I explore how everyday and emerging technologies shape human behavior, well-being, and society.</p>
           <div class="grid">
             <article class="card">
-              <h3>Researcher</h3>
-              <p>I examine online behavior, identity, and the social and ethical implications of technology use.</p>
+              <h3>Academic</h3>
+              <p>I teach cyberpsychology, personality, research ethics, and data visualization in online and in-person courses.</p>
             </article>
             <article class="card">
-              <h3>Educator</h3>
-              <p>I teach cyberpsychology, personality, research ethics, and data visualization in online and in-person courses.</p>
+              <h3>Researcher</h3>
+              <p>I examine online behavior, identity, and the social and ethical implications of technology use.</p>
             </article>
             <article class="card">
               <h3>Mentor</h3>
@@ -376,10 +373,10 @@
 
       <section id="contact" class="contact">
         <div class="wrap">
-          <h2>Contact</h2>
-          <p class="intro">For academic inquiries, research collaboration, or speaking opportunities, please feel free to contact me by email.</p>
+          <h2>Connect</h2>
+          <p class="intro">Feel free to contact me by email at <a href="mailto:CyberPsychologyLab@gmail.com">CyberPsychologyLab@gmail.com</a> for academic inquiries, research collaboration, or other opportunities.</p>
           <div class="buttons" style="justify-content:center">
-            <a class="button primary" href="mailto:cyberpsychologylab@gmail.com">Email me</a>
+            <a class="button primary" href="mailto:CyberPsychologyLab@gmail.com">Email me</a>
             <a class="button" href="https://www.nsu.edu/psychology/ms-cyberpsychology/contact-us" target="_blank" rel="noopener noreferrer">Norfolk State University</a>
             <a class="button" href="https://scholar.google.com/citations?user=QHQ8MSoAAAAJ&amp;hl=en&amp;oi=ao" target="_blank" rel="noopener noreferrer">Google Scholar</a>
             <a class="button" href="https://www.linkedin.com/in/azar-eftekhar-phd-in-psychology" target="_blank" rel="noopener noreferrer">LinkedIn</a>
