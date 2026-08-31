@@ -16,7 +16,6 @@
 
     <title>Azar Eftekhar, PhD | Cyberpsychology Researcher</title>
 
-    <!-- Open Graph -->
     <meta property="og:type" content="profile" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:title" content="Azar Eftekhar, PhD | Psychologist & Cyberpsychology Researcher" />
@@ -28,14 +27,12 @@
     <meta property="profile:first_name" content="Azar" />
     <meta property="profile:last_name" content="Eftekhar" />
 
-    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="Azar Eftekhar, PhD | Psychologist & Cyberpsychology Researcher" />
     <meta name="twitter:description" content="Psychologist, cyberpsychology researcher, and educator studying online identity, social media behavior, and human–AI interaction." />
     <meta name="twitter:image" content="https://azareftekhar.github.io/Azar_Portrait_2024.jpg" />
     <meta name="twitter:image:alt" content="Azar Eftekhar, PhD" />
 
-    <!-- Structured data -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -100,8 +97,10 @@
         --accent-hover: #7c3aed;
         --max: 880px;
       }
+
       * { box-sizing: border-box; }
       html { scroll-behavior: smooth; }
+
       body {
         margin: 0;
         color: var(--text);
@@ -110,9 +109,19 @@
         font-size: 16px;
         line-height: 1.7;
       }
-      a { color: var(--accent); text-underline-offset: 3px; }
+
+      a {
+        color: var(--accent);
+        text-underline-offset: 3px;
+      }
+
       a:hover { color: var(--accent-hover); }
-      .wrap { width: min(var(--max), calc(100% - 3rem)); margin: auto; }
+
+      .wrap {
+        width: min(var(--max), calc(100% - 3rem));
+        margin: auto;
+      }
+
       header {
         border-bottom: 1px solid var(--line);
         background: var(--paper);
@@ -120,79 +129,355 @@
         top: 0;
         z-index: 5;
       }
-      nav { min-height: 50px; display: flex; justify-content: flex-end; align-items: center; gap: 2rem; flex-wrap: wrap; padding: .5rem 0; }
-      .nav-links { display: flex; flex-wrap: wrap; gap: 1.1rem; font-size: .85rem; font-family: Arial, Helvetica, sans-serif; }
-      .nav-links a { text-decoration: none; color: var(--muted); }
+
+      nav {
+        min-height: 50px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+        padding: .5rem 0;
+      }
+
+      .nav-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.1rem;
+        font-size: .85rem;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .nav-links a {
+        text-decoration: none;
+        color: var(--muted);
+      }
+
       .nav-links a:hover { color: var(--accent-hover); }
+
       .hero {
         padding: 3rem 0 2.75rem;
         background: var(--soft);
         border-bottom: 1px solid var(--line);
       }
-      .hero-layout { display: grid; grid-template-columns: 150px minmax(0, 1fr); align-items: start; gap: 2rem; }
-      .hero-photo { width: 100%; max-width: 150px; margin: 0; }
-      .hero-photo img { display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: center; border: 1px solid var(--line); }
-      .eyebrow { margin: 0 0 .5rem; color: var(--accent); font: 700 .72rem/1.2 Arial, Helvetica, sans-serif; letter-spacing: .08em; text-transform: uppercase; }
-      h1, h2, h3 { font-family: Georgia, "Times New Roman", Times, serif; line-height: 1.25; font-weight: 700; }
-      h1 { max-width: 640px; margin: 0; color: var(--ink); font-size: 1.85rem; }
+
+      .hero-layout {
+        display: grid;
+        grid-template-columns: 150px minmax(0, 1fr);
+        align-items: start;
+        gap: 2rem;
+      }
+
+      .hero-photo {
+        width: 100%;
+        max-width: 150px;
+        margin: 0;
+      }
+
+      .hero-photo img {
+        display: block;
+        width: 100%;
+        aspect-ratio: 4 / 5;
+        object-fit: cover;
+        object-position: center;
+        border: 1px solid var(--line);
+      }
+
+      .eyebrow {
+        margin: 0 0 .5rem;
+        color: var(--accent);
+        font: 700 .72rem/1.2 Arial, Helvetica, sans-serif;
+        letter-spacing: .08em;
+        text-transform: uppercase;
+      }
+
+      h1, h2, h3 {
+        font-family: Georgia, "Times New Roman", Times, serif;
+        line-height: 1.25;
+        font-weight: 700;
+      }
+
+      h1 {
+        max-width: 640px;
+        margin: 0;
+        color: var(--ink);
+        font-size: 1.85rem;
+      }
+
       .hero h1 { font-size: 2.2rem; }
-      h1 em { color: inherit; font-style: italic; font-weight: 400; }
-      .hero-copy { max-width: 620px; margin: .9rem 0 0; font-size: 1rem; color: var(--text); }
-      .name-note { margin: .4rem 0 0; color: var(--muted); font-size: .85rem; font-style: italic; }
-      .buttons { display: flex; flex-wrap: wrap; gap: .6rem; margin-top: 1.25rem; }
-      .button { padding: .45rem .8rem; border: 1px solid var(--ink); border-radius: 2px; font-weight: 700; text-decoration: none; font-size: .78rem; font-family: Arial, Helvetica, sans-serif; letter-spacing: .01em; color: var(--ink); }
-      .button.primary { color: var(--paper); background: var(--ink); border-color: var(--ink); }
-      .button:hover { background: var(--ink); color: var(--paper); }
+
+      h1 em {
+        color: inherit;
+        font-style: italic;
+        font-weight: 400;
+      }
+
+      .hero h1 em { font-size: .72em; }
+
+      .name-note {
+        margin: .4rem 0 0;
+        color: var(--muted);
+        font-size: .85rem;
+        font-style: italic;
+      }
+
+      .buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: .6rem;
+        margin-top: 1.25rem;
+      }
+
+      .button {
+        padding: .45rem .8rem;
+        border: 1px solid var(--ink);
+        border-radius: 2px;
+        font-weight: 700;
+        text-decoration: none;
+        font-size: .78rem;
+        font-family: Arial, Helvetica, sans-serif;
+        letter-spacing: .01em;
+        color: var(--ink);
+      }
+
+      .button.primary {
+        color: var(--paper);
+        background: var(--ink);
+        border-color: var(--ink);
+      }
+
+      .button:hover {
+        background: var(--ink);
+        color: var(--paper);
+      }
+
       section { padding: 2.5rem 0; }
       section + section { border-top: 1px solid var(--line); }
+
       #about { background: #f5f3ff; }
-      .label { color: var(--accent); font: 700 .72rem/1.2 Arial, Helvetica, sans-serif; text-transform: uppercase; letter-spacing: .08em; }
-      h2 { margin: .4rem 0 1rem; font-size: 1.4rem; color: var(--ink); }
-      .intro { max-width: 680px; font-size: .98rem; color: var(--text); }
-      .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 1.75rem; }
-      .card { padding: 1.1rem 1.2rem; background: var(--paper); border: 1px solid var(--line); border-left: 3px solid var(--accent); }
-      .card h3 { margin: 0 0 .4rem; font-size: 1.02rem; }
-      .card p { margin: 0; color: var(--muted); font-size: .88rem; line-height: 1.55; }
-      .research-list { list-style: disc; padding: 0 0 0 1.25rem; margin: 1.5rem 0 0; columns: 2; column-gap: 2.5rem; }
-      .research-list li { padding: 0 0 .85rem; font-size: .95rem; line-height: 1.6; break-inside: avoid; }
-      .research-gallery { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; max-width: 760px; margin: 1.75rem 0 0; }
+      #about .intro { max-width: 850px; }
+
+      .label {
+        color: var(--accent);
+        font: 700 .72rem/1.2 Arial, Helvetica, sans-serif;
+        text-transform: uppercase;
+        letter-spacing: .08em;
+      }
+
+      h2 {
+        margin: .4rem 0 1rem;
+        font-size: 1.4rem;
+        color: var(--ink);
+      }
+
+      .intro {
+        max-width: 680px;
+        font-size: .98rem;
+        color: var(--text);
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        margin-top: 1.75rem;
+      }
+
+      .card {
+        padding: 1.1rem 1.2rem;
+        background: var(--paper);
+        border: 1px solid var(--line);
+        border-left: 3px solid var(--accent);
+      }
+
+      .card h3 {
+        margin: 0 0 .4rem;
+        font-size: 1.02rem;
+      }
+
+      .card p {
+        margin: 0;
+        color: var(--muted);
+        font-size: .88rem;
+        line-height: 1.55;
+      }
+
+      .research-list {
+        list-style: disc;
+        padding: 0 0 0 1.25rem;
+        margin: 1.5rem 0 0;
+        columns: 2;
+        column-gap: 2.5rem;
+      }
+
+      .research-list li {
+        padding: 0 0 .85rem;
+        font-size: .95rem;
+        line-height: 1.6;
+        break-inside: avoid;
+      }
+
+      .research-gallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        max-width: 760px;
+        margin: 1.75rem 0 0;
+      }
+
       .research-gallery figure { margin: 0; }
-      .research-gallery img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: contain; background: var(--paper); border: 1px solid var(--line); }
-      .research-gallery figcaption { margin-top: .5rem; color: var(--muted); font-size: .82rem; line-height: 1.4; }
-      .pubs { display: grid; gap: .5rem; margin-top: 1.5rem; }
-      .pub { padding: .95rem 0; border-bottom: 1px solid var(--line); }
-      .pub-title { margin: 0; font-weight: 700; font-size: .96rem; }
-      .pub-title a { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; }
-      .pub-title a:hover { color: var(--accent-hover); text-decoration: underline; }
-      .pub-meta { margin: .3rem 0 0; color: var(--muted); font-size: .85rem; font-style: italic; }
-      .mentorship-role { margin: 0; color: var(--text); font-size: .82rem; font-weight: 700; line-height: 1.3; white-space: nowrap; }
-      .mentorship-list { max-width: 760px; margin: 1.35rem 0 0; padding-left: 1.25rem; }
-      .mentorship-list li { padding: 0 0 .7rem; font-size: .93rem; line-height: 1.55; }
-      .highlights-list { max-width: 760px; margin: 1.35rem 0 0; padding-left: 1.25rem; }
-      .highlights-list li { padding: 0 0 .7rem; font-size: .93rem; line-height: 1.55; }
-      .certificate-list { margin: 1.35rem 0 0; padding-left: 1.25rem; columns: 2; column-gap: 2rem; }
-      .certificate-list li { break-inside: avoid; padding: 0 0 .8rem; font-size: .88rem; line-height: 1.5; }
+
+      .research-gallery img {
+        display: block;
+        width: 100%;
+        aspect-ratio: 4 / 3;
+        object-fit: contain;
+        background: var(--paper);
+        border: 1px solid var(--line);
+      }
+
+      .research-gallery figcaption {
+        margin-top: .5rem;
+        color: var(--muted);
+        font-size: .82rem;
+        line-height: 1.4;
+      }
+
+      .pubs {
+        display: grid;
+        gap: .5rem;
+        margin-top: 1.5rem;
+      }
+
+      .pub {
+        padding: .95rem 0;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .pub-title {
+        margin: 0;
+        font-weight: 700;
+        font-size: .96rem;
+      }
+
+      .pub-title a {
+        color: var(--ink);
+        text-decoration: underline;
+        text-underline-offset: 3px;
+      }
+
+      .pub-title a:hover {
+        color: var(--accent-hover);
+        text-decoration: underline;
+      }
+
+      .pub-meta {
+        margin: .3rem 0 0;
+        color: var(--muted);
+        font-size: .85rem;
+        font-style: italic;
+      }
+
+      .mentorship-role {
+        margin: 0;
+        color: var(--text);
+        font-size: .82rem;
+        font-weight: 700;
+        line-height: 1.3;
+        white-space: nowrap;
+      }
+
+      .mentorship-list {
+        max-width: 760px;
+        margin: 1.35rem 0 0;
+        padding-left: 1.25rem;
+      }
+
+      .mentorship-list li {
+        padding: 0 0 .7rem;
+        font-size: .93rem;
+        line-height: 1.55;
+      }
+
+      .highlights-list {
+        max-width: 760px;
+        margin: 1.35rem 0 0;
+        padding-left: 1.25rem;
+      }
+
+      .highlights-list li {
+        padding: 0 0 .7rem;
+        font-size: .93rem;
+        line-height: 1.55;
+      }
+
+      .certificate-list {
+        margin: 1.35rem 0 0;
+        padding-left: 1.25rem;
+        columns: 2;
+        column-gap: 2rem;
+      }
+
+      .certificate-list li {
+        break-inside: avoid;
+        padding: 0 0 .8rem;
+        font-size: .88rem;
+        line-height: 1.5;
+      }
+
       .certificate-list strong { color: var(--ink); }
-      .courses { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: 1.5rem; }
-      .course { padding: .35rem .65rem; border: 1px solid var(--line); font-size: .78rem; font-family: Arial, Helvetica, sans-serif; color: var(--text); background: var(--soft); }
-      .teaching-photo { margin: 1.5rem 0 0; max-width: 760px; }
-      .teaching-photo img { display: block; width: 100%; max-height: 520px; object-fit: contain; border: 1px solid var(--line); background: var(--paper); }
-      .teaching-photo figcaption { margin-top: .5rem; color: var(--muted); font-size: .82rem; line-height: 1.4; }
+
+      .teaching-photo {
+        margin: 1.5rem 0 0;
+        max-width: 760px;
+      }
+
+      .teaching-photo img {
+        display: block;
+        width: 100%;
+        max-height: 520px;
+        object-fit: contain;
+        border: 1px solid var(--line);
+        background: var(--paper);
+      }
+
+      .teaching-photo figcaption {
+        margin-top: .5rem;
+        color: var(--muted);
+        font-size: .82rem;
+        line-height: 1.4;
+      }
+
       .contact { text-align: center; }
       .contact .intro { margin: auto; }
+
       @media (max-width: 720px) {
-        nav { padding: .75rem 0; align-items: flex-start; flex-direction: column; gap: .5rem; }
+        nav {
+          padding: .75rem 0;
+          align-items: flex-start;
+          flex-direction: column;
+          gap: .5rem;
+        }
+
         .mentorship-role { white-space: normal; }
         .grid { grid-template-columns: 1fr; }
         .research-list { columns: 1; }
         .research-gallery { grid-template-columns: 1fr; }
         .certificate-list { columns: 1; }
-        .hero-layout { grid-template-columns: 100px minmax(0, 1fr); }
+
+        .hero-layout {
+          grid-template-columns: 100px minmax(0, 1fr);
+        }
+
         .hero h1 { font-size: 1.8rem; }
-        .wrap { width: min(var(--max), calc(100% - 2rem)); }
+
+        .wrap {
+          width: min(var(--max), calc(100% - 2rem));
+        }
       }
     </style>
   </head>
+
   <body>
     <header>
       <nav class="wrap" aria-label="Main navigation">
@@ -212,7 +497,10 @@
       <section class="hero">
         <div class="wrap">
           <div class="hero-layout">
-            <figure class="hero-photo"><img src="Azar_Portrait_2024.jpg" alt="Azar Eftekhar, PhD" /></figure>
+            <figure class="hero-photo">
+              <img src="Azar_Portrait_2024.jpg" alt="Azar Eftekhar, PhD" />
+            </figure>
+
             <div>
               <p class="eyebrow">Academic | Researcher | Mentor</p>
               <h1>Azar Eftekhar, <em>PhD in Psychology</em></h1>
@@ -225,21 +513,33 @@
       <section id="about">
         <div class="wrap">
           <h2>About Me</h2>
-          <p class="intro">I hold a PhD in Psychology with a specialization in cyberpsychology and a master’s degree in Information Science. With more than 16 years of teaching and research experience, my work examines the intersection of psychology, user behavior, and digital and emerging technologies.</p>
-          <p class="intro">I have designed and taught a wide range of undergraduate and graduate courses in-person and online at institutions including the <a href="https://sc.edu/study/colleges_schools/cic/faculty-staff/nik_azar.php" target="_blank" rel="noopener noreferrer">University of South Carolina</a> and <a href="https://www.nsu.edu/psychology/ms-cyberpsychology/contact-us#:~:text=Azar%20Nik%20(formerly%20Eftekhar)%2C%20Ph.D." target="_blank" rel="noopener noreferrer">Norfolk State University</a>. My teaching includes Foundations of Psychology, Personality, Cognition, Cyberpsychology, Research Methods and Ethics, and Data Visualization. I have developed a strong record of student engagement and satisfaction, supported by consistently positive student and peer evaluations. I am also a certified online instructor.</p>
-          <p class="intro">My research focuses on personality, online identity, user behavior, and human-centered AI. At <a href="https://www.nsu.edu/psychology/ms-cyberpsychology/contact-us#:~:text=Azar%20Nik%20(formerly%20Eftekhar)%2C%20Ph.D." target="_blank" rel="noopener noreferrer">Norfolk State University</a>, I serve as a research committee chair and mentor master’s students in the M.S. in Cyberpsychology program. I am also an affiliated member of <a href="https://www.wlv.ac.uk/research/research-centres/psychology-research/research-clusters/cyberpsychology-research-at-the-university-of-wolverhampton/#:~:text=External%20Members" target="_blank" rel="noopener noreferrer">CRUW (Cyberpsychology Research at the University of Wolverhampton)</a>. Learn more about my scholarly work by exploring my <a href="#publications">selected publications</a>, and feel free to <a href="#contact">connect with me</a>.</p>
+
+          <p class="intro">
+            I hold a PhD in Psychology with a specialization in cyberpsychology and a master’s degree in Information Science. With more than 16 years of teaching and research experience, my work examines the intersection of psychology, user behavior, and digital and emerging technologies.
+          </p>
+
+          <p class="intro">
+            I have designed and taught a wide range of undergraduate and graduate courses in-person and online at institutions including the <a href="https://sc.edu/study/colleges_schools/cic/faculty-staff/nik_azar.php" target="_blank" rel="noopener noreferrer">University of South Carolina</a> and <a href="https://www.nsu.edu/psychology/ms-cyberpsychology/contact-us#:~:text=Azar%20Nik%20(formerly%20Eftekhar)%2C%20Ph.D." target="_blank" rel="noopener noreferrer">Norfolk State University</a>. My teaching includes Foundations of Psychology, Personality, Cognition, Cyberpsychology, Research Methods and Ethics, and Data Visualization. I have developed a strong record of student engagement and <a href="https://sc.edu/about/offices_and_divisions/cte/programs/teaching_recognition/thank_a_teacher/" target="_blank" rel="noopener noreferrer">student satisfaction</a>, supported by consistently positive student and peer evaluations. I am also a certified online instructor.
+          </p>
+
+          <p class="intro">
+            My research focuses on personality, online identity, user behavior, and human-centered AI. At Norfolk State University, I serve as a research committee chair and mentor master’s students in the <a href="https://www.nsu.edu/psychology/ms-cyberpsychology/" target="_blank" rel="noopener noreferrer">M.S. in Cyberpsychology program</a>. I am also an affiliated member of <a href="https://www.wlv.ac.uk/research/research-centres/psychology-research/research-clusters/cyberpsychology-research-at-the-university-of-wolverhampton/#:~:text=External%20Members" target="_blank" rel="noopener noreferrer">CRUW (Cyberpsychology Research at the University of Wolverhampton)</a>. Learn more about my scholarly work by exploring my <a href="#publications">selected publications</a>, and feel free to <a href="#contact">connect with me</a>.
+          </p>
+
           <div class="grid">
             <article class="card">
               <h3>Academic</h3>
-              <p>I teach cyberpsychology, personality, research ethics, and data visualization in online and in-person courses.</p>
+              <p>“How can psychology help us better understand life in a rapidly changing digital world?”</p>
             </article>
+
             <article class="card">
               <h3>Researcher</h3>
-              <p>I examine online behavior, identity, and the social and ethical implications of technology use.</p>
+              <p>“How is AI re-writing the ABCs of human experience—affect, behavior, and cognition?”</p>
             </article>
+
             <article class="card">
               <h3>Mentor</h3>
-              <p>I supervise and mentor graduate students as they develop focused, feasible, and ethically sound research projects.</p>
+              <p>“How can thoughtful guidance help students turn curiosity into meaningful research?”</p>
             </article>
           </div>
         </div>
@@ -249,7 +549,11 @@
         <div class="wrap">
           <p class="label">Research</p>
           <h2>Research Interests</h2>
-          <p class="intro">My research is grounded in psychology and uses qualitative, quantitative, and mixed-methods approaches. I use interviews, surveys, content analysis, and statistical analysis to investigate questions about human behavior in online and technology-mediated settings.</p>
+
+          <p class="intro">
+            My research is grounded in psychology and uses qualitative, quantitative, and mixed-methods approaches. I use interviews, surveys, content analysis, and statistical analysis to investigate questions about human behavior in online and technology-mediated settings.
+          </p>
+
           <ul class="research-list">
             <li>Online identity, self-presentation, and visual communication</li>
             <li>Personality and social-media behavior</li>
@@ -258,11 +562,13 @@
             <li>Generative AI in teaching, learning, and research</li>
             <li>Digital well-being, technostress, and online communities</li>
           </ul>
+
           <div class="research-gallery" aria-label="Research in action">
             <figure>
               <img src="VR-1%20Research.JPG" alt="Immersive technology research experience" loading="lazy" />
               <figcaption>Exploring immersive and emerging technologies in everyday contexts.</figcaption>
             </figure>
+
             <figure>
               <img src="VR-2%20Research.jpg" alt="Virtual reality research experience" loading="lazy" />
               <figcaption>Experiencing virtual reality as a research and teaching tool.</figcaption>
@@ -274,36 +580,46 @@
       <section id="publications">
         <div class="wrap">
           <h2>Selected Journal Articles and Book Chapter</h2>
+
           <div class="pubs">
             <article class="pub">
-              <p class="pub-title"><a href="https://doi.org/10.1007/978-3-031-52643-5_46-1" target="_blank" rel="noopener noreferrer">Self-Presentation and Personality</a></p>
-              <p class="pub-meta">Eftekhar, A. (2026). <em>Self-Presentation and Personality.</em> In: Branley-Bell, D., Orchard, L., Limniou, M., &amp; Stefanova, V. (eds) <em>The Palgrave Encyclopedia of Cyberpsychology</em>. Palgrave Macmillan, Cham. <a href="https://doi.org/10.1007/978-3-031-52643-5_46-1" target="_blank" rel="noopener noreferrer">https://doi.org/10.1007/978-3-031-52643-5_46-1</a></p>
+              <p class="pub-title">
+                <a href="https://doi.org/10.1007/978-3-031-52643-5_46-1" target="_blank" rel="noopener noreferrer">Self-Presentation and Personality</a>
+              </p>
+              <p class="pub-meta">
+                Eftekhar, A. (2026). <em>Self-Presentation and Personality.</em> In: Branley-Bell, D., Orchard, L., Limniou, M., &amp; Stefanova, V. (eds) <em>The Palgrave Encyclopedia of Cyberpsychology</em>. Palgrave Macmillan, Cham. <a href="https://doi.org/10.1007/978-3-031-52643-5_46-1" target="_blank" rel="noopener noreferrer">https://doi.org/10.1007/978-3-031-52643-5_46-1</a>
+              </p>
             </article>
+
             <article class="pub">
-              <p class="pub-title"><a href="https://doi.org/10.1016/j.ipm.2025.104350" target="_blank" rel="noopener noreferrer">Is generative AI reshaping academic practices worldwide? A survey of adoption, benefits, and concerns</a></p>
-              <p class="pub-meta">Mohammadi, E., Thelwall, M., Cai, Y., Collier, T., Tahamtan, I., &amp; Eftekhar, A. (2026). Is generative AI reshaping academic practices worldwide? A survey of adoption, benefits, and concerns. <em>Information Processing &amp; Management, 63</em>, 104350. <a href="https://doi.org/10.1016/j.ipm.2025.104350" target="_blank" rel="noopener noreferrer">https://doi.org/10.1016/j.ipm.2025.104350</a></p>
+              <p class="pub-title">
+                <a href="https://doi.org/10.1016/j.ipm.2025.104350" target="_blank" rel="noopener noreferrer">Is generative AI reshaping academic practices worldwide? A survey of adoption, benefits, and concerns</a>
+              </p>
+              <p class="pub-meta">
+                Mohammadi, E., Thelwall, M., Cai, Y., Collier, T., Tahamtan, I., &amp; Eftekhar, A. (2026). Is generative AI reshaping academic practices worldwide? A survey of adoption, benefits, and concerns. <em>Information Processing &amp; Management, 63</em>, 104350. <a href="https://doi.org/10.1016/j.ipm.2025.104350" target="_blank" rel="noopener noreferrer">https://doi.org/10.1016/j.ipm.2025.104350</a>
+              </p>
             </article>
+
             <article class="pub">
-              <p class="pub-title"><a href="https://doi.org/10.1016/j.chb.2014.04.048" target="_blank" rel="noopener noreferrer">Capturing personality from Facebook photos and photo-related activities: How much exposure do you need?</a></p>
-              <p class="pub-meta">Eftekhar, A., Fullwood, C., &amp; Morris, N. (2014). Capturing personality from Facebook photos and photo-related activities: How much exposure do you need? <em>Computers in Human Behavior, 37</em>, 162–170. <a href="https://doi.org/10.1016/j.chb.2014.04.048" target="_blank" rel="noopener noreferrer">https://doi.org/10.1016/j.chb.2014.04.048</a></p>
+              <p class="pub-title">
+                <a href="https://doi.org/10.1016/j.chb.2014.04.048" target="_blank" rel="noopener noreferrer">Capturing personality from Facebook photos and photo-related activities: How much exposure do you need?</a>
+              </p>
+              <p class="pub-meta">
+                Eftekhar, A., Fullwood, C., &amp; Morris, N. (2014). Capturing personality from Facebook photos and photo-related activities: How much exposure do you need? <em>Computers in Human Behavior, 37</em>, 162–170. <a href="https://doi.org/10.1016/j.chb.2014.04.048" target="_blank" rel="noopener noreferrer">https://doi.org/10.1016/j.chb.2014.04.048</a>
+              </p>
             </article>
           </div>
         </div>
       </section>
 
-      <section id="teaching" class="teaching">
+      <section id="teaching">
         <div class="wrap">
           <h2>Teaching</h2>
-          <p class="intro">I teach a wide range of psychology and cyberpsychology courses, from PSYC 101 and research methods to personality, media and consumer cyberpsychology, and graduate capstone research. My teaching connects psychological theory and research practice to digital behavior, emerging technology, and everyday life.</p>
-          <div class="courses" aria-label="Selected courses">
-            <span class="course">Cyberpsychology</span>
-            <span class="course">Research Method &amp; Ethics</span>
-            <span class="course">Survey of Personality</span>
-            <span class="course">Cyber Cognition</span>
-            <span class="course">Data Visualization</span>
-            <span class="course">Media Consumer Cyberpsychology</span>
-            <span class="course">Capstone Research</span>
-          </div>
+
+          <p class="intro">
+            I teach a wide range of psychology and cyberpsychology courses, from PSYC 101 and research methods to personality, media and consumer cyberpsychology, and graduate capstone research. My teaching connects psychological theory and research practice to digital behavior, emerging technology, and everyday life.
+          </p>
+
           <figure class="teaching-photo">
             <img src="Class%20teaching.jpg" alt="Azar Eftekhar teaching a class" loading="lazy" />
             <figcaption>Teaching psychology and cyberpsychology.</figcaption>
@@ -315,6 +631,7 @@
         <div class="wrap">
           <p class="label">Teaching Excellence</p>
           <h2>Highlights Of Teaching Excellence And Student Satisfaction</h2>
+
           <ul class="highlights-list">
             <li>Achieved an average Global Index score of 4.5+/5 across all courses taught at USC from Fall 2022 to Spring 2026, highlighting consistent excellence in communication, engagement, and instructional clarity.</li>
             <li>Sustained an Instructor Overall rating of 4.5+/5 for all courses taught at USC from Fall 2022 to Spring 2026, demonstrating effective teaching methods and strong student connections.</li>
@@ -329,6 +646,7 @@
           <p class="label">Mentorship</p>
           <h2>Graduate Mentorship (Selected Projects)</h2>
           <p class="mentorship-role">Committee Chair and Mentor for Master's Students, Cyberpsychology Program, Norfolk State University | 2022–Present</p>
+
           <ol class="mentorship-list">
             <li>Psychological, Ethical, and Societal Implications of Algorithmic Design: How AI Shapes Privacy, Power, and Public Discourse (2026)</li>
             <li>Empathetic AI Without Emotion: How Anthropomorphism and Social Presence Shape Trust in Human–AI Interaction (HAX) (2025)</li>
@@ -347,6 +665,7 @@
       <section id="awards">
         <div class="wrap">
           <h2>Awards And Recognition</h2>
+
           <ul class="highlights-list">
             <li>Career Influencer, USC Career Center, Fall 2025 and Spring 2026</li>
             <li>Thank-a-Teacher, Center for Teaching Excellence, USC, Fall 2023, Spring and Fall 2024, Spring 2025</li>
@@ -360,6 +679,7 @@
       <section id="certificates">
         <div class="wrap">
           <h2>Certificates</h2>
+
           <ul class="certificate-list">
             <li><strong>Active Learning with Generative AI-Powered Activities</strong> (2025), Center for Teaching Excellence, University of South Carolina</li>
             <li><strong>Navigating New Norms: Harnessing Generative AI for Library Services and Solutions</strong> (2024), National Library of Medicine</li>
@@ -383,7 +703,11 @@
       <section id="contact" class="contact">
         <div class="wrap">
           <h2>Connect</h2>
-          <p class="intro">Feel free to contact me by email at <a href="mailto:CyberPsychologyLab@gmail.com">CyberPsychologyLab@gmail.com</a> for academic inquiries, research collaboration, or other opportunities.</p>
+
+          <p class="intro">
+            Feel free to contact me by email at <a href="mailto:CyberPsychologyLab@gmail.com">CyberPsychologyLab@gmail.com</a> for academic inquiries, research collaboration, or other opportunities.
+          </p>
+
           <div class="buttons" style="justify-content:center">
             <a class="button" href="https://www.nsu.edu/psychology/ms-cyberpsychology/contact-us#:~:text=Azar%20Nik%20(formerly%20Eftekhar)%2C%20Ph.D." target="_blank" rel="noopener noreferrer">Norfolk State University</a>
             <a class="button" href="https://sc.edu/study/colleges_schools/cic/faculty-staff/nik_azar.php" target="_blank" rel="noopener noreferrer">University of South Carolina</a>
