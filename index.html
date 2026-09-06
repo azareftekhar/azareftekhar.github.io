@@ -97,8 +97,10 @@
         --accent-hover: #7c3aed;
         --max: 880px;
       }
+
       * { box-sizing: border-box; }
       html { scroll-behavior: smooth; }
+
       body {
         margin: 0;
         color: var(--text);
@@ -107,9 +109,19 @@
         font-size: 16px;
         line-height: 1.7;
       }
-      a { color: var(--accent); text-underline-offset: 3px; }
+
+      a {
+        color: var(--accent);
+        text-underline-offset: 3px;
+      }
+
       a:hover { color: var(--accent-hover); }
-      .wrap { width: min(var(--max), calc(100% - 3rem)); margin: auto; }
+
+      .wrap {
+        width: min(var(--max), calc(100% - 3rem));
+        margin: auto;
+      }
+
       header {
         border-bottom: 1px solid var(--line);
         background: var(--paper);
@@ -117,6 +129,7 @@
         top: 0;
         z-index: 5;
       }
+
       nav {
         min-height: 50px;
         display: flex;
@@ -126,6 +139,7 @@
         flex-wrap: wrap;
         padding: .5rem 0;
       }
+
       .nav-links {
         display: flex;
         flex-wrap: wrap;
@@ -133,20 +147,33 @@
         font-size: .85rem;
         font-family: Arial, Helvetica, sans-serif;
       }
-      .nav-links a { text-decoration: none; color: var(--muted); }
+
+      .nav-links a {
+        text-decoration: none;
+        color: var(--muted);
+      }
+
       .nav-links a:hover { color: var(--accent-hover); }
+
       .hero {
         padding: 3rem 0 2.75rem;
         background: var(--soft);
         border-bottom: 1px solid var(--line);
       }
+
       .hero-layout {
         display: grid;
         grid-template-columns: 150px minmax(0, 1fr);
         align-items: start;
         gap: 2rem;
       }
-      .hero-photo { width: 100%; max-width: 150px; margin: 0; }
+
+      .hero-photo {
+        width: 100%;
+        max-width: 150px;
+        margin: 0;
+      }
+
       .hero-photo img {
         display: block;
         width: 100%;
@@ -155,6 +182,7 @@
         object-position: center;
         border: 1px solid var(--line);
       }
+
       .eyebrow {
         margin: 0 0 .5rem;
         color: var(--accent);
@@ -162,52 +190,88 @@
         letter-spacing: .08em;
         text-transform: uppercase;
       }
+
       h1, h2, h3 {
         font-family: Georgia, "Times New Roman", Times, serif;
         line-height: 1.25;
         font-weight: 700;
       }
-      h1 { max-width: 640px; margin: 0; color: var(--ink); font-size: 1.85rem; }
+
+      h1 {
+        max-width: 640px;
+        margin: 0;
+        color: var(--ink);
+        font-size: 1.85rem;
+      }
+
       .hero h1 { font-size: 2.2rem; }
-      h1 em { color: inherit; font-style: italic; font-weight: 400; }
+
+      h1 em {
+        color: inherit;
+        font-style: italic;
+        font-weight: 400;
+      }
+
       .hero h1 em { font-size: .72em; }
+
       .name-note {
         margin: .4rem 0 0;
         color: var(--muted);
         font-size: .85rem;
         font-style: italic;
       }
+
       section { padding: 2.5rem 0; }
       section + section { border-top: 1px solid var(--line); }
+
       #about { background: #f5f3ff; }
       #about .intro { max-width: 850px; }
+
       .label {
         color: var(--accent);
         font: 700 .72rem/1.2 Arial, Helvetica, sans-serif;
         text-transform: uppercase;
         letter-spacing: .08em;
       }
-      h2 { margin: .4rem 0 1rem; font-size: 1.4rem; color: var(--ink); }
-      .intro { max-width: 680px; font-size: .98rem; color: var(--text); }
+
+      h2 {
+        margin: .4rem 0 1rem;
+        font-size: 1.4rem;
+        color: var(--ink);
+      }
+
+      .intro {
+        max-width: 680px;
+        font-size: .98rem;
+        color: var(--text);
+      }
+
       .grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 1rem;
         margin-top: 1.75rem;
       }
+
       .card {
         padding: 1.1rem 1.2rem;
         background: var(--paper);
         border: 1px solid var(--line);
         border-left: 3px solid var(--accent);
       }
-      .card h3 { margin: 0 0 .4rem; font-size: 1.02rem; }
+
+      .card h3 {
+        margin: 0 0 .4rem;
+        font-size: 1.02rem;
+      }
+
       .card p {
         margin: 0;
         color: var(--muted);
         font-size: .88rem;
         line-height: 1.55;
       }
+
       .research-list {
         list-style: disc;
         padding: 0 0 0 1.25rem;
@@ -215,12 +279,14 @@
         columns: 2;
         column-gap: 2.5rem;
       }
+
       .research-list li {
         padding: 0 0 .85rem;
         font-size: .95rem;
         line-height: 1.6;
         break-inside: avoid;
       }
+
       .research-gallery {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -228,7 +294,9 @@
         max-width: 760px;
         margin: 1.75rem 0 0;
       }
+
       .research-gallery figure { margin: 0; }
+
       .research-gallery img {
         display: block;
         width: 100%;
@@ -237,6 +305,7 @@
         background: var(--paper);
         border: 1px solid var(--line);
       }
+
       .research-gallery figcaption,
       .teaching-photo figcaption {
         margin-top: .5rem;
@@ -244,22 +313,44 @@
         font-size: .82rem;
         line-height: 1.4;
       }
-      .pubs { display: grid; gap: .5rem; margin-top: 1.5rem; }
-      .pub { padding: .95rem 0; border-bottom: 1px solid var(--line); }
-      .pub-title { margin: 0; font-weight: 700; font-size: .96rem; }
+
+      .pubs {
+        display: grid;
+        gap: .5rem;
+        margin-top: 1.5rem;
+      }
+
+      .pub {
+        padding: .95rem 0;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .pub-title {
+        margin: 0;
+        font-weight: 700;
+        font-size: .96rem;
+      }
+
       .pub-title a {
         color: var(--ink);
         text-decoration: underline;
         text-underline-offset: 3px;
       }
+
       .pub-title a:hover { color: var(--accent-hover); }
+
       .pub-meta {
         margin: .3rem 0 0;
         color: var(--muted);
         font-size: .85rem;
         font-style: italic;
       }
-      .teaching-photo { margin: 1.5rem 0 0; max-width: 760px; }
+
+      .teaching-photo {
+        margin: 1.5rem 0 0;
+        max-width: 760px;
+      }
+
       .teaching-photo img {
         display: block;
         width: 100%;
@@ -268,6 +359,7 @@
         border: 1px solid var(--line);
         background: var(--paper);
       }
+
       .mentorship-role {
         margin: 0;
         color: var(--text);
@@ -276,39 +368,47 @@
         line-height: 1.3;
         white-space: nowrap;
       }
+
       .mentorship-list,
       .highlights-list {
         max-width: 760px;
         margin: 1.35rem 0 0;
         padding-left: 1.25rem;
       }
+
       .mentorship-list li,
       .highlights-list li {
         padding: 0 0 .7rem;
         font-size: .93rem;
         line-height: 1.55;
       }
+
       .certificate-list {
         margin: 1.35rem 0 0;
         padding-left: 1.25rem;
         columns: 2;
         column-gap: 2rem;
       }
+
       .certificate-list li {
         break-inside: avoid;
         padding: 0 0 .8rem;
         font-size: .88rem;
         line-height: 1.5;
       }
+
       .certificate-list strong { color: var(--ink); }
+
       .contact { text-align: center; }
       .contact .intro { margin: auto; }
+
       .buttons {
         display: flex;
         flex-wrap: wrap;
         gap: .6rem;
         margin-top: 1.25rem;
       }
+
       .button {
         padding: .45rem .8rem;
         border: 1px solid var(--ink);
@@ -320,7 +420,12 @@
         letter-spacing: .01em;
         color: var(--ink);
       }
-      .button:hover { background: var(--ink); color: var(--paper); }
+
+      .button:hover {
+        background: var(--ink);
+        color: var(--paper);
+      }
+
       @media (max-width: 720px) {
         nav {
           padding: .75rem 0;
@@ -328,6 +433,7 @@
           flex-direction: column;
           gap: .5rem;
         }
+
         .mentorship-role { white-space: normal; }
         .grid { grid-template-columns: 1fr; }
         .research-list { columns: 1; }
@@ -362,6 +468,7 @@
             <figure class="hero-photo">
               <img src="Azar_Portrait_2024.jpg" alt="Azar Eftekhar, PhD" />
             </figure>
+
             <div>
               <p class="eyebrow">Academic | Researcher | Mentor</p>
               <h1>Azar Eftekhar, <em>PhD in Psychology</em></h1>
@@ -392,10 +499,12 @@
               <h3>Academic</h3>
               <p>“How can psychology help us better understand life in a rapidly changing digital world?”</p>
             </article>
+
             <article class="card">
               <h3>Researcher</h3>
               <p>“How is AI re-writing the ABCs of human experience—affect, behavior, and cognition?”</p>
             </article>
+
             <article class="card">
               <h3>Mentor</h3>
               <p>“How can thoughtful guidance help students turn curiosity into meaningful research?”</p>
@@ -408,6 +517,7 @@
         <div class="wrap">
           <p class="label">Research</p>
           <h2>Research Interests</h2>
+
           <p class="intro">
             My research is grounded in psychology and uses qualitative, quantitative, and mixed-methods approaches. I use interviews, surveys, content analysis, and statistical analysis to investigate questions about human behavior in online and technology-mediated settings.
           </p>
@@ -426,6 +536,7 @@
               <img src="VR-1%20Research.JPG" alt="Immersive technology research experience" loading="lazy" />
               <figcaption>Exploring immersive and emerging technologies in everyday contexts.</figcaption>
             </figure>
+
             <figure>
               <img src="VR-2%20Research.jpg" alt="Virtual reality research experience" loading="lazy" />
               <figcaption>Experiencing virtual reality as a research and teaching tool.</figcaption>
@@ -472,12 +583,17 @@
       <section id="teaching" class="teaching">
         <div class="wrap">
           <h2>Teaching</h2>
+
           <p class="intro">
             I teach a wide range of psychology and cyberpsychology courses, from PSYC 101 and research methods to personality, media and consumer cyberpsychology, and graduate capstone research. My teaching connects psychological theory and research practice to digital behavior, emerging technology, and everyday life.
           </p>
 
           <figure class="teaching-photo">
-            <img src="Class-teaching-blurred.png" alt="Azar Eftekhar with students in a classroom; student faces are blurred for privacy" loading="lazy" />
+            <img
+              src="Class-teaching-blurred.png"
+              alt="Azar Eftekhar with students in a classroom; student faces are blurred for privacy"
+              loading="lazy"
+            />
             <figcaption>Teaching psychology and cyberpsychology.</figcaption>
           </figure>
         </div>
@@ -501,7 +617,10 @@
         <div class="wrap">
           <p class="label">Mentorship</p>
           <h2>Graduate Mentorship (Selected Projects)</h2>
-          <p class="mentorship-role">Committee Chair and Mentor for Master's Students, Cyberpsychology Program, Norfolk State University | 2022–Present</p>
+
+          <p class="mentorship-role">
+            Committee Chair and Mentor for Master's Students, Cyberpsychology Program, Norfolk State University | 2022–Present
+          </p>
 
           <ol class="mentorship-list">
             <li>Psychological, Ethical, and Societal Implications of Algorithmic Design: How AI Shapes Privacy, Power, and Public Discourse (2026)</li>
@@ -559,6 +678,7 @@
       <section id="contact" class="contact">
         <div class="wrap">
           <h2>Connect</h2>
+
           <p class="intro">
             Feel free to contact me by email at <a href="mailto:CyberPsychologyLab@gmail.com">CyberPsychologyLab@gmail.com</a> for academic inquiries, research collaboration, or other opportunities.
           </p>
