@@ -21,14 +21,11 @@
   <meta property="og:image" content="https://azareftekhar.github.io/Azar_Portrait_2024.jpg" />
   <meta property="og:image:alt" content="Azar Eftekhar, PhD" />
   <meta property="og:site_name" content="Azar Eftekhar, PhD" />
-  <meta property="profile:first_name" content="Azar" />
-  <meta property="profile:last_name" content="Eftekhar" />
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Azar Eftekhar, PhD | Psychologist & Cyberpsychology Researcher" />
   <meta name="twitter:description" content="Psychologist, cyberpsychology researcher, and educator studying online identity, social media behavior, and human–AI interaction." />
   <meta name="twitter:image" content="https://azareftekhar.github.io/Azar_Portrait_2024.jpg" />
-  <meta name="twitter:image:alt" content="Azar Eftekhar, PhD" />
 
   <script type="application/ld+json">
   {
@@ -107,11 +104,7 @@
       line-height: 1.7;
     }
 
-    a {
-      color: var(--accent);
-      text-underline-offset: 3px;
-    }
-
+    a { color: var(--accent); text-underline-offset: 3px; }
     a:hover { color: var(--accent-hover); }
 
     .wrap {
@@ -132,7 +125,6 @@
       display: flex;
       justify-content: flex-end;
       align-items: center;
-      gap: 2rem;
       flex-wrap: wrap;
       padding: .5rem 0;
     }
@@ -176,7 +168,6 @@
       width: 100%;
       aspect-ratio: 4 / 5;
       object-fit: cover;
-      object-position: center;
       border: 1px solid var(--line);
     }
 
@@ -195,20 +186,13 @@
     }
 
     h1 {
-      max-width: 640px;
       margin: 0;
       color: var(--ink);
       font-size: 1.85rem;
     }
 
     .hero h1 { font-size: 2.2rem; }
-
-    h1 em {
-      color: inherit;
-      font-style: italic;
-      font-weight: 400;
-    }
-
+    h1 em { font-style: italic; font-weight: 400; }
     .hero h1 em { font-size: .72em; }
 
     .name-note {
@@ -257,10 +241,7 @@
       border-left: 3px solid var(--accent);
     }
 
-    .card h3 {
-      margin: 0 0 .4rem;
-      font-size: 1.02rem;
-    }
+    .card h3 { margin: 0 0 .4rem; font-size: 1.02rem; }
 
     .card p {
       margin: 0;
@@ -292,7 +273,8 @@
       margin: 1.75rem 0 0;
     }
 
-    .research-gallery figure { margin: 0; }
+    .research-gallery figure,
+    .teaching-photo { margin: 0; }
 
     .research-gallery img {
       display: block;
@@ -343,16 +325,19 @@
       font-style: italic;
     }
 
-    .teaching-photo {
-      margin: 1.5rem 0 0;
+    .teaching-photos {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
       max-width: 760px;
+      margin-top: 1.5rem;
     }
 
     .teaching-photo img {
       display: block;
       width: 100%;
-      max-height: 520px;
-      object-fit: contain;
+      height: 290px;
+      object-fit: cover;
       border: 1px solid var(--line);
       background: var(--paper);
     }
@@ -363,7 +348,6 @@
       font-size: .82rem;
       font-weight: 700;
       line-height: 1.3;
-      white-space: nowrap;
     }
 
     .mentorship-list,
@@ -402,6 +386,7 @@
     .buttons {
       display: flex;
       flex-wrap: wrap;
+      justify-content: center;
       gap: .6rem;
       margin-top: 1.25rem;
     }
@@ -428,15 +413,23 @@
         padding: .75rem 0;
         align-items: flex-start;
         flex-direction: column;
-        gap: .5rem;
       }
 
-      .mentorship-role { white-space: normal; }
-      .grid { grid-template-columns: 1fr; }
-      .research-list { columns: 1; }
-      .research-gallery { grid-template-columns: 1fr; }
-      .certificate-list { columns: 1; }
-      .hero-layout { grid-template-columns: 100px minmax(0, 1fr); }
+      .grid,
+      .research-gallery,
+      .teaching-photos {
+        grid-template-columns: 1fr;
+      }
+
+      .research-list,
+      .certificate-list {
+        columns: 1;
+      }
+
+      .hero-layout {
+        grid-template-columns: 100px minmax(0, 1fr);
+      }
+
       .hero h1 { font-size: 1.8rem; }
       .wrap { width: min(var(--max), calc(100% - 2rem)); }
     }
@@ -577,7 +570,7 @@
       </div>
     </section>
 
-    <section id="teaching" class="teaching">
+    <section id="teaching">
       <div class="wrap">
         <h2>Teaching</h2>
 
@@ -585,23 +578,25 @@
           I teach a wide range of psychology and cyberpsychology courses, from PSYC 101 and research methods to personality, media and consumer cyberpsychology, and graduate capstone research. My teaching connects psychological theory and research practice to digital behavior, emerging technology, and everyday life.
         </p>
 
-        <figure class="teaching-photo">
-          <img
-            src="Class-teaching.png"
-            alt="Azar Eftekhar teaching students in a classroom"
-            loading="lazy"
-          />
-          <figcaption>Teaching psychology and cyberpsychology.</figcaption>
-        </figure>
+        <div class="teaching-photos">
+          <figure class="teaching-photo">
+            <img
+              src="Class%20teaching.jpg"
+              alt="Azar Eftekhar teaching students in a classroom"
+              loading="lazy"
+            />
+            <figcaption>Teaching psychology and cyberpsychology.</figcaption>
+          </figure>
 
-        <figure class="teaching-photo">
-          <img
-            src="Class-teaching-blurred.png"
-            alt="Azar Eftekhar with students in a classroom; student faces are blurred for privacy"
-            loading="lazy"
-          />
-          <figcaption>Teaching psychology and cyberpsychology.</figcaption>
-        </figure>
+          <figure class="teaching-photo">
+            <img
+              src="Class-teaching-blurred.png"
+              alt="Azar Eftekhar with students in a classroom; student faces are blurred for privacy"
+              loading="lazy"
+            />
+            <figcaption>Teaching psychology and cyberpsychology.</figcaption>
+          </figure>
+        </div>
       </div>
     </section>
 
@@ -689,7 +684,7 @@
           Feel free to contact me by email at <a href="mailto:CyberPsychologyLab@gmail.com">CyberPsychologyLab@gmail.com</a> for academic inquiries, research collaboration, or other opportunities.
         </p>
 
-        <div class="buttons" style="justify-content:center">
+        <div class="buttons">
           <a class="button" href="https://www.nsu.edu/psychology/ms-cyberpsychology/contact-us#:~:text=Azar%20Nik%20(formerly%20Eftekhar)%2C%20Ph.D." target="_blank" rel="noopener noreferrer">Norfolk State University</a>
           <a class="button" href="https://sc.edu/study/colleges_schools/cic/faculty-staff/nik_azar.php" target="_blank" rel="noopener noreferrer">University of South Carolina</a>
           <a class="button" href="https://scholar.google.com/citations?user=QHQ8MSoAAAAJ&amp;hl=en&amp;oi=ao" target="_blank" rel="noopener noreferrer">Google Scholar</a>
